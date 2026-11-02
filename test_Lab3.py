@@ -43,7 +43,7 @@ def test_bubble_sort_0numbers():
 
 
 def test_bubble_sort_string():
-    input_arr = [64, 34, 25, 12, 22, 11, "90"]
+    input_arr = [64, 34, 25, 12,    22, 11, "90"]
     result = Lab3.bubble_sort(input_arr, Lab3.SORT_DESCENDING)
     assert(result == 2)
     print(result)
