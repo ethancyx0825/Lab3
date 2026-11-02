@@ -31,8 +31,21 @@ def test_bubble_sort_invalid():
 
 
 def test_bubble_sort_morethan_orequalsto_10():
-    input_arr = [64, 34, 25, 12, 22, 11, 90, 67 , 90 , 60]
+    input_arr = [64, 34, 25, 12, 22, 11, 90,67,67,67,67]
     result = Lab3.bubble_sort(input_arr,Lab3.SORT_DESCENDING)
-    assert(result == 1)
-   
+    assert (result == 1)
+
+
+def test_bubble_sort_0numbers():
+    input_arr=[]
+    result = Lab3.bubble_sort(input_arr, Lab3.SORT_ASCENDING)
+    assert (result == 0)
+
+
+def test_bubble_sort_string():
+    input_arr = [64, 34, 25, 12, 22, 11, "90"]
+    result = Lab3.bubble_sort(input_arr, Lab3.SORT_DESCENDING)
+    assert(result == 2)
+    print(result)
+
 
